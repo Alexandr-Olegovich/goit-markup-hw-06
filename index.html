@@ -426,12 +426,18 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
           <div class="user-info">
-          <label for="user-name-of" class="modal-label">Имя</label>
+          <label for="user-name-of" class="modal-label">Имя
+          <span class="span-for-icon">
         <input type="text"
          name="user-name"
          class="modal-input"
          id="user-name-of"
           required />
+          <svg class="modal-icon" width="18px" height="18px">
+            <use href="./images/icons/form-icons.svg#icon-person-black-18dp-1"></use>
+          </svg>
+          </span>
+          </label>
           </div>
           <div class="user-info">
           <label for="user-tel" class="modal-label">Телефон</label>
@@ -464,21 +470,7 @@
         </form>
       </div>      
     </div>
-    <script>
-      (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+    <script src="./js/mosal.js">    
     </script>
   </body>
 </html>
