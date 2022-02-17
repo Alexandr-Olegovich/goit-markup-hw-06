@@ -411,19 +411,19 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="footer-email-position">
-        <div class="footer-email">        
+          </div>        
+       
+         <form class="footer-email">        
           <label for="foot-email-text" class="footer-email-text">Подпишитесь на рассылку</label>          
           <input type="email" name="email" id="foot-e-mail" class="foot-post-input" placeholder="E-mail"/>
-          </div>
+          
           <button type="button" class="join-btn"><span class="footer-button-text">Подписаться</span>
             <svg class="footer-icon" width="24" height="24">
               <use href="./images/icons/form-icons.svg#icon-icon-send"></use>
             </svg>
           </button> 
-          </div>       
+          </form>
+       </div>      
       </address>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -486,8 +486,8 @@
              placeholder="Введите текст"></textarea>        
           </div>
           <div class="check-box"> 
-            <input type="checkbox" name="check-box" class="check-box-input" value="" required />
-            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></span>
+            <input type="checkbox" name="check-box" class="check-box-input"id="check-box" value="" required />
+            <label for="check-box" class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></label>
           </div>
         <button type="submit" class="submit-btn">Отправить</button>
         </form>
